@@ -13,5 +13,5 @@ def login():
         komentarz = request.form['komentarz']
         return str((imie, komentarz))
     else:
-        return render_template('login_page1.html')
+        return render_template('login_page1.html') #formularz
 app.run()
