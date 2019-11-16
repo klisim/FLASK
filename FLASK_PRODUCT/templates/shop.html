@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Shop</title>
+</head>
+<body>
+
+<h1>Products</h1>
+
+<ul>
+{% for item in data %}
+    <li>name: {{ item[0] }}, price: {{ item[1] }}, amount: {{ item[2] }}</li>
+{% endfor %}
+</ul>
+
+<hr>
+
+<form action="/" method="post">
+    Name <input name="name" type="text" maxlength="255"><br>
+    Price <input name="price" type="number" min="1" max="9"><br>
+    Amount <input name="amount" type="number"><br>
+    <input type="submit" value="Add">
+</form>
+
+</body>
+</html>

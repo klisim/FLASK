@@ -8,7 +8,7 @@ def index():
     return 'Index Page'
 
 
-@app.route('/hello')
+@app.route('/login')
 def hello():
     return 'Hello World'
 
